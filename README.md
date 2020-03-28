@@ -23,9 +23,12 @@ Enjoy!
 
 ★ Twitch : 
 [twitch.tv/mrpianitza](https://twitch.tv/mrpianitza) 
+
 ★ Twitter : 
 [twitter.com/Pianitza](https://twitter.com/Pianitza)
+
 ★ Facebook : 
 [facebook.com/Pianitza](https://facebook.com/Pianitza)
+
 ★ Instagram :  
 [instagram.com/mrpianitza](https://instagram.com/mrpianitza)
