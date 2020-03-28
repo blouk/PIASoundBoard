@@ -19,3 +19,9 @@ npm start build
 open the index.html file  from "dist" folder into your favorite browser.
 
 Enjoy!
+
+~~~~
+★ Twitch : twitch.tv/mrpianitza 
+★ Twitter : twitter.com/Pianitza 
+★ Facebook : facebook.com/Pianitza
+★ Instagram :  instagram.com/mrpianitza
