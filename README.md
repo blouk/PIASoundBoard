@@ -30,5 +30,5 @@ Enjoy!
 ★ Facebook : 
 [facebook.com/Pianitza](https://facebook.com/Pianitza)
 
-★ Instagram :  
+★ Instagram :
 [instagram.com/mrpianitza](https://instagram.com/mrpianitza) 
