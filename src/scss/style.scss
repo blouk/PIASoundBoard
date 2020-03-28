@@ -1,1 +1,18 @@
 @import "~bootstrap/scss/bootstrap";
+
+html {
+    background: url("img/pia.png") black no-repeat -100px bottom fixed;
+}
+
+body {
+    background: transparent !important;
+}
+
+.pia-bg {
+    padding: $spacer;
+    background: transparent;
+
+    .btn {
+        margin: 4px;
+    }
+}

@@ -1,6 +1,6 @@
 const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
-
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: './src/app.js',
     output: {
@@ -9,37 +9,55 @@ module.exports = {
     },
     module: {
         rules: [{
-            test: /\.(scss)$/,
-            use: [{
-                    // Adds CSS to the DOM by injecting a `<style>` tag
-                    loader: 'style-loader'
-                },
-                {
-                    // Interprets `@import` and `url()` like `import/require()` and will resolve them
-                    loader: 'css-loader'
-                },
-                {
-                    // Loader for webpack to process CSS with PostCSS
-                    loader: 'postcss-loader',
-                    options: {
-                        plugins: function() {
-                            return [
-                                require('autoprefixer')
-                            ];
+                test: /\.(scss)$/,
+                use: [{
+
+                        loader: 'style-loader'
+                    },
+
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            plugins: function() {
+                                return [
+                                    require('autoprefixer')
+                                ];
+                            }
                         }
+                    },
+                    {
+                        loader: 'sass-loader'
                     }
-                },
-                {
-                    // Loads a SASS/SCSS file and compiles it to CSS
-                    loader: 'sass-loader'
-                }
-            ]
-        }]
+
+                ]
+            },
+            {
+                test: /\.(png|jpg|gif)$/,
+                use: [{
+                    loader: 'url-loader',
+                    options: {
+                        limit: 5000
+                    }
+                }]
+            },
+
+
+        ]
     },
     plugins: [
+        new HtmlWebpackPlugin({
+            hash: true,
+            template: './src/index.ejs',
+            filename: 'index.html',
+            chunks: ['index'],
+
+        }),
         new CopyPlugin([{
-            from: 'src/index.html',
-            to: 'index.html',
-        }, ]),
+            from: 'src/sound/',
+            to: path.resolve(__dirname, 'dist/sound'),
+        }, {
+            from: 'src/img/',
+            to: path.resolve(__dirname, 'dist/img'),
+        }]),
     ],
 };

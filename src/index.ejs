@@ -9,9 +9,13 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>My first Bootstrap - Webpack App!</h1>
-        <!-- Bundled File -->
+    <div class="container-full pia-bg">
+
+            <%
+            var template = require("html-loader!./generated.html");
+            %>
+            <%= template%>
+
     </div>
 </body>
 
