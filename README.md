@@ -20,7 +20,7 @@ open the index.html file  from "dist" folder into your favorite browser.
 
 Enjoy!
 
-~~~~
+
 ★ Twitch : 
 [twitch.tv/mrpianitza](https://twitch.tv/mrpianitza) 
 ★ Twitter : 
